@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>NIDHI M R</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}    
+        <button type="submit">find combinations</button>
+        </form>
+        {% if param1 %}
+        <h2>{{param1}}</h2>
+        {% endif %}
+
+
+
+
+
+    <p>{{param1}}</p>
+    {% for i in param2 %}
+    <p>{{i}}</p>
+    {% endfor %}
+<ul>
+    {% for i in param3 %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
+<ol>
+    {% for i in param4 %}
+    <li>{{i}}</l1>
+    {% endfor %}
+</ol>
+</body>
+</html>
